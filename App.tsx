@@ -21,7 +21,7 @@ function App() {
         className="my-4 w-10 h-10"
       />
       <SView className="flex flex-row items-center justify-center gap-4 h-20 pb-4 my-4 w-4/5 bg-gray-100 rounded-lg shadow-md shadow-gray-400">
-        <SView className="w-10 h-10 bg-red-400 rounded-full" />
+        <SView className="w-10 h-10 bg-zinc-900 rounded-full" />
         <STextInput
           placeholder="What are you thinking today?"
           className="p-4 w-3/4 h-fit text-lg flex items-center"
