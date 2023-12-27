@@ -6,7 +6,7 @@ const SText = styled(Text);
 function Post() {
   return (
     <SView>
-      <SText>Oi</SText>
+      <SText className="font-inter font-bold">Oi</SText>
     </SView>
   );
 }
