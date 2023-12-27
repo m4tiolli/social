@@ -38,7 +38,7 @@ function Home() {
   return !fontsLoaded && !fontError ? (
     <Image source={require("../../assets/splash.png")} />
   ) : (
-    <SView className="flex items-center h-full relative bg-white dark:bg-zinc-900">
+    <SView className="flex items-center pl-4 h-full relative bg-white dark:bg-zinc-900">
       <StatusBar style={colorScheme == "dark" ? "light" : "dark"} />
       <ToastManager style={{ fontFamily: "Inter" }} />
       <SImage
@@ -52,7 +52,7 @@ function Home() {
       <SView
         className={`flex gap-4 ${
           textFocus ? "pb-4" : "pb-0"
-        } my-2 w-4/5 bg-zinc-100 dark:bg-zinc-700 rounded-lg android:shadow-md ios:shadow-sm ios:shadow-zinc-400 relative`}
+        } my-2 w-11/12 bg-zinc-100 dark:bg-zinc-700 rounded-lg android:shadow-md ios:shadow-sm ios:shadow-zinc-400 relative`}
       >
         <SView
           className={`${
