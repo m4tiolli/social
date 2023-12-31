@@ -3,8 +3,10 @@ import Home from "./src/Screens/Home";
 import { NavigationContainer } from "@react-navigation/native";
 import Octicons from "react-native-vector-icons/Octicons";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
+import Feather from "react-native-vector-icons/Feather";
 import Profile from "./src/Screens/Profile";
 import { useColorScheme } from "nativewind";
+import Settings from "./src/Screens/Settings";
 
 const Tab = createBottomTabNavigator();
 
@@ -45,6 +47,15 @@ function Tabs() {
         }}
         name="Profile"
         component={Profile}
+      />
+      <Tab.Screen
+        options={{
+          tabBarIcon: (tabInfo) => {
+            return <Feather name="settings" color={tabInfo.color} size={20} />;
+          },
+        }}
+        name="Settings"
+        component={Settings}
       />
     </Tab.Navigator>
   );
